@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>J. Knott's Bakery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fffaf7;
+            color: #3e3e3e;
+        }}
+        header {{
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #f6e8df;
+        }}
+        header h1 {{
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }}
+        header p {{
+            font-style: italic;
+            color: #7a5c4d;
+        }}
+        section {{
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }}
+        h2 {{
+            border-bottom: 2px solid #e0c3a6;
+            padding-bottom: 0.5rem;
+        }}
+        .menu-item {{
+            margin: 1rem 0;
+        }}
+        footer {{
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+            margin: 3rem 0 1rem;
+        }}
+        form {{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }}
+        input, textarea {{
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }}
+        button {{
+            padding: 0.5rem;
+            background-color: #7a5c4d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>J. Knott's Bakery</h1>
+    <p>Exceptional quality in every sweet bite</p>
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <p>At J. Knott's Bakery, we pour passion into every bake. Based in the UK, we create handcrafted sweet treats delivered across the nation—bringing quality and warmth to your doorstep.</p>
+</section>
+
+<section>
+    <h2>Our Signature Trays</h2>
+    <div class="menu-item"><strong>Brownie Tray (12 pieces)</strong> – £18</div>
+    <div class="menu-item"><strong>Cookie Tray (12 pieces)</strong> – £15</div>
+    <div class="menu-item"><strong>Blondie Tray (12 pieces)</strong> – £18</div>
+    <div class="menu-item"><strong>Rocky Road Tray (12 pieces)</strong> – £20</div>
+    <p><em>New seasonal specials released monthly.</em></p>
+</section>
+
+<section>
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="_replyto" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <p>Or reach us at <a href="mailto:jknottbakery@gmail.com">jknottbakery@gmail.com</a></p>
+</section>
+
+<section>
+    <h2>Follow Us</h2>
+    <p><a href="https://instagram.com/jknottbakery">Instagram</a> | <a href="https://tiktok.com/@jknottbakery">TikTok</a></p>
+</section>
+
+<footer>
+    &copy; 2025 J. Knott's Bakery – All rights reserved
+</footer>
+
+</body>
+</html>
