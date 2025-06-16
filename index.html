@@ -1,127 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>J. Knott's Bakery</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #fffaf7;
-            color: #3e3e3e;
-        }
-        header {
-            text-align: center;
-            padding: 2rem 1rem;
-            background-color: #f6e8df;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            font-style: italic;
-            color: #7a5c4d;
-        }
-        section {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        h2 {
-            border-bottom: 2px solid #e0c3a6;
-            padding-bottom: 0.5rem;
-        }
-        .menu-item {
-            margin: 1rem 0;
-            font-size: 1.1rem;
-        }
-        .divider {
-            border-top: 1px solid #ddd;
-            margin: 1rem 0;
-        }
-        footer {
-            text-align: center;
-            font-size: 0.9rem;
-            color: #777;
-            margin: 3rem 0 1rem;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-        input, textarea {
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            padding: 0.6rem;
-            background-color: #7a5c4d;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        .note {
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-            color: #555;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J. Knott's Bakery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fffaf4;
+      color: #4b2e2e;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #f3e8dc;
+      padding: 2rem;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    h2 {
+      border-bottom: 2px solid #d2b48c;
+      padding-bottom: 0.5rem;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    .menu-item {
+      margin: 1.5rem 0;
+    }
+    footer {
+      text-align: center;
+      background: #f3e8dc;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: #4b2e2e;
+      font-size: 1.4rem;
+    }
+    .button {
+      display: inline-block;
+      background-color: #8b5e3c;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: #6a4e42;
+    }
+  </style>
 </head>
 <body>
-
-<header>
+  <header>
+    <img src="logo.png" alt="J. Knott's Bakery Logo" />
     <h1>J. Knott's Bakery</h1>
     <p>Exceptional quality in every sweet bite</p>
-</header>
+  </header>
 
-<section>
+  <section>
     <h2>About Us</h2>
-    <p>At J. Knott's Bakery, we pour passion into every bake. Based in the UK, we create handcrafted sweet treats delivered across the nation—bringing quality and warmth to your doorstep.</p>
-</section>
+    <p>I’m a student baker with a serious sweet tooth. J. Knott’s Bakery is my passion project—sharing indulgent, handcrafted bakes that bring comfort and joy. Whether it’s a gooey brownie or a nostalgic sprinkle cake, I believe everyone deserves a treat that warms the soul.</p>
+  </section>
 
-<section>
-    <h2>Our Signature Trays</h2>
-    <div class="menu-item"><strong>Brownie Tray (12 pieces)</strong> – £18</div>
-    <div class="divider"></div>
-    <div class="menu-item"><strong>Cookie Tray (12 pieces)</strong> – £15</div>
-    <div class="divider"></div>
-    <div class="menu-item"><strong>Blondie Tray (12 pieces)</strong> – £18</div>
-    <div class="divider"></div>
-    <div class="menu-item"><strong>Rocky Road Tray (12 pieces)</strong> – £20</div>
-    <p><em>New seasonal specials released monthly.</em></p>
-</section>
+  <section>
+    <h2>Menu</h2>
+    <div class="menu-item">
+      <strong>Signature Fudgy Chocolate Brownies</strong> – £30/tray<br>
+      Dive into rich, intensely chocolatey perfection.
+    </div>
+    <div class="menu-item">
+      <strong>Velvety Vanilla Blondies</strong> – £30/tray<br>
+      Chewy, buttery and packed with vanilla flavour.
+    </div>
+    <div class="menu-item">
+      <strong>Classic Chewy Chocolate Chip Cookies</strong> – £25/box<br>
+      Crisp edges and gooey centres loaded with chocolate.
+    </div>
+    <div class="menu-item">
+      <strong>Nostalgic School Dinner Sprinkle Cake</strong> – £25/tray<br>
+      Fluffy vanilla sponge with icing and rainbow sprinkles.
+    </div>
+    <div class="menu-item">
+      <strong>Luxurious Millionaire's Shortbread</strong> – £35/tray<br>
+      Buttery base, gooey caramel and rich chocolate top.
+    </div>
+    <div class="menu-item">
+      <strong>Velvet Cloud Red Velvet Cake</strong> – £40/tray<br>
+      Moist cocoa-infused sponge with cream cheese frosting.
+    </div>
+    <div class="menu-item">
+      <strong>Ultimate Chocolate Fudge Cake</strong> – £40/tray<br>
+      Rich, indulgent, and deeply chocolatey.
+    </div>
+    <div class="menu-item">
+      <strong>Zingy Lemon Drizzle Cake</strong> – £30/tray<br>
+      Moist, fresh and topped with tangy-sweet glaze.
+    </div>
+    <div class="menu-item">
+      <strong>Crunchy Chocolate Cornflake Squares</strong> – £25/tray<br>
+      Retro classic with a chewy, chocolate-coated crunch.
+    </div>
+    <div class="menu-item">
+      <strong>Smooth Biscoff Swirl Cheesecake</strong> – £40<br>
+      Creamy cheesecake with Biscoff base & swirl (pickup only).
+    </div>
+    <div class="menu-item">
+      <strong>Sunshine Key Lime Cheesecake</strong> – £40<br>
+      Vibrant and refreshing citrus cheesecake (pickup only).
+    </div>
+    <div class="menu-item">
+      <strong>Sweet & Tangy Lemon Raspberry Cheesecake</strong> – £40<br>
+      Zesty lemon cheesecake with juicy raspberries (pickup only).
+    </div>
+    <p class="note">Cheesecakes are pickup only.</p>
+  </section>
 
-<section>
-    <h2>How to Order</h2>
-    <p class="note">1. Browse the menu<br>2. Submit your order below with your name, treats & delivery postcode<br>3. We'll confirm availability & payment</p>
-</section>
+  <section>
+    <h2>Order & Delivery</h2>
+    <p>For <strong>Southend pick-up</strong>, please message me directly on <a href="https://instagram.com/jknottbakery">Instagram</a> or <a href="https://tiktok.com/@jknottbakery">TikTok</a>.</p>
+    <p>For <strong>UK-wide delivery</strong>, email your order to <a href="mailto:jknottbakery@gmail.com">jknottbakery@gmail.com</a>. Payments accepted via PayPal, Stripe or crypto. Cash available for pickup only.</p>
+    <a class="button" href="mailto:jknottbakery@gmail.com">Place Your Order</a>
+  </section>
 
-<section>
-    <h2>Place an Order</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="_replyto" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your order details & postcode" rows="5" required></textarea>
-        <button type="submit">Place Order</button>
-    </form>
-    <p>Or reach us at <a href="mailto:jknottbakery@gmail.com">jknottbakery@gmail.com</a></p>
-</section>
-
-<section>
-    <h2>Follow Us</h2>
-    <p><a href="https://instagram.com/jknottbakery">Instagram</a> | <a href="https://tiktok.com/@jknottbakery">TikTok</a></p>
-</section>
-
-<footer>
-    &copy; 2025 J. Knott's Bakery – All rights reserved
-</footer>
-
+  <footer>
+    <div class="socials">
+      <a href="https://instagram.com/jknottbakery"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com/@jknottbakery"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <p>&copy; 2025 J. Knott's Bakery</p>
+  </footer>
 </body>
 </html>
