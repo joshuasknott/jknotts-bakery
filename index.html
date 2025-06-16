@@ -20,7 +20,6 @@
         header h1 {
             margin: 0;
             font-size: 2.5rem;
-            letter-spacing: 1px;
         }
         header p {
             font-style: italic;
@@ -36,6 +35,11 @@
             padding-bottom: 0.5rem;
         }
         .menu-item {
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+        .divider {
+            border-top: 1px solid #ddd;
             margin: 1rem 0;
         }
         footer {
@@ -55,12 +59,18 @@
             border-radius: 4px;
         }
         button {
-            padding: 0.5rem;
+            padding: 0.6rem;
             background-color: #7a5c4d;
             color: white;
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            font-weight: bold;
+        }
+        .note {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            color: #555;
         }
     </style>
 </head>
@@ -79,19 +89,27 @@
 <section>
     <h2>Our Signature Trays</h2>
     <div class="menu-item"><strong>Brownie Tray (12 pieces)</strong> – £18</div>
+    <div class="divider"></div>
     <div class="menu-item"><strong>Cookie Tray (12 pieces)</strong> – £15</div>
+    <div class="divider"></div>
     <div class="menu-item"><strong>Blondie Tray (12 pieces)</strong> – £18</div>
+    <div class="divider"></div>
     <div class="menu-item"><strong>Rocky Road Tray (12 pieces)</strong> – £20</div>
     <p><em>New seasonal specials released monthly.</em></p>
 </section>
 
 <section>
-    <h2>Contact Us</h2>
+    <h2>How to Order</h2>
+    <p class="note">1. Browse the menu<br>2. Submit your order below with your name, treats & delivery postcode<br>3. We'll confirm availability & payment</p>
+</section>
+
+<section>
+    <h2>Place an Order</h2>
     <form action="https://formspree.io/f/your-form-id" method="POST">
         <input type="text" name="name" placeholder="Your name" required>
         <input type="email" name="_replyto" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message" rows="5" required></textarea>
-        <button type="submit">Send</button>
+        <textarea name="message" placeholder="Your order details & postcode" rows="5" required></textarea>
+        <button type="submit">Place Order</button>
     </form>
     <p>Or reach us at <a href="mailto:jknottbakery@gmail.com">jknottbakery@gmail.com</a></p>
 </section>
