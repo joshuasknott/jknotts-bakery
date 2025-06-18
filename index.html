@@ -2,94 +2,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J. Knott's Bakery</title>
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            background-color: #fdf6ee;
-            margin: 0;
-            padding: 0;
-            color: #5c4438;
-        }
-        header {
-            text-align: center;
-            padding: 40px 20px 20px 20px;
-        }
-        header img {
-            max-width: 200px;
-            height: auto;
-        }
-        h1, h2, h3 {
-            text-align: center;
-        }
-        .banner {
-            background-color: #fff4db;
-            text-align: center;
-            padding: 15px;
-            font-weight: bold;
-            margin: 0;
-        }
-        .menu, .contact {
-            max-width: 600px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            padding: 8px 0;
-            border-bottom: 1px solid #d8c2aa;
-        }
-        .contact a {
-            color: #5c4438;
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 30px;
-            font-size: 0.9em;
-            color: #a58b7b;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>J. Knott's Bakery</title>
+  <style>
+    :root {
+      --bg: #fff9f4;
+      --primary: #4a3f35;
+      --accent: #ffe8b3;
+      --border: #e4d3b2;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--primary);
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
+    header img {
+      max-width: 200px;
+      height: auto;
+    }
+    .banner {
+      background-color: var(--accent);
+      text-align: center;
+      padding: 12px;
+      font-size: 1.1em;
+      font-weight: 600;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h2 {
+      font-size: 1.8em;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 6px;
+    }
+    ul.menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul.menu li {
+      font-size: 1.1em;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .contact p, .contact ul {
+      font-size: 1.05em;
+      line-height: 1.6em;
+    }
+    .contact ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .contact a {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    .contact strong {
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #998675;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="J. Knott's Bakery Logo">
-    </header>
-    <div class="banner">
-        🎉 First-time customers get 20% off their order – mention it in your message!
-    </div>
-    <section class="menu">
-        <h2>Menu</h2>
-        <ul>
-            <li>Brownie Tray - £25</li>
-            <li>Blondie Tray - £25</li>
-            <li>Cookie Tray - £25</li>
-            <li>Rocky Road Tray - £25</li>
-            <li>Millionaire Shortbread Tray - £25</li>
-            <li>Lemon Drizzle Cake (Tray) - £30</li>
-            <li>School Dinner Sprinkle Cake (Tray) - £30</li>
-            <li>Chocolate Fudge Cake (Whole) - £35</li>
-            <li>Cheesecake (Whole) - £40</li>
-        </ul>
+  <header>
+    <img src="logo.png" alt="J. Knott's Bakery Logo">
+  </header>
+
+  <div class="banner">
+    🎉 First-time customers get 20% off their order – just mention it when ordering!
+  </div>
+
+  <main>
+    <section>
+      <h2>Menu</h2>
+      <ul class="menu">
+        <li>Brownie Tray – £25</li>
+        <li>Blondie Tray – £25</li>
+        <li>Cookie Tray – £25</li>
+        <li>Rocky Road Tray – £25</li>
+        <li>Millionaire Shortbread Tray – £25</li>
+        <li>Lemon Drizzle Cake (Tray) – £30</li>
+        <li>School Dinner Sprinkle Cake (Tray) – £30</li>
+        <li>Chocolate Fudge Cake (Whole) – £35</li>
+        <li>Cheesecake (Whole) – £40</li>
+      </ul>
     </section>
+
     <section class="contact">
-        <h2>Order Now</h2>
-        <p>All bakes are made to order and delivered across the UK.</p>
-        <p>To place an order, get in touch via:</p>
-        <ul>
-            <li>Email: <a href="mailto:jknottbakery@gmail.com">jknottbakery@gmail.com</a></li>
-            <li>Instagram: <a href="https://www.instagram.com/jknottbakery/" target="_blank">@jknottbakery</a></li>
-            <li>TikTok: <a href="https://www.tiktok.com/@jknottbakery/" target="_blank">@jknottbakery</a></li>
-        </ul>
-        <p>We also accept <strong>custom orders</strong> – just message us and we’ll see what we can do!</p>
+      <h2>Order Now</h2>
+      <p>All bakes are made to order and available for nationwide UK delivery.</p>
+      <p><strong>Local pickup and drop-off available in Southend-on-Sea.</strong></p>
+      <p>You can place your order by contacting us via:</p>
+      <ul>
+        <li>Email: <a href="mailto:jknottbakery@gmail.com">jknottbakery@gmail.com</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/jknottbakery/" target="_blank">@jknottbakery</a></li>
+        <li>TikTok: <a href="https://www.tiktok.com/@jknottbakery/" target="_blank">@jknottbakery</a></li>
+      </ul>
+      <p>We also accept <strong>custom orders</strong> – just message us and we’ll see what we can do!</p>
     </section>
-    <footer>
-        &copy; 2025 J. Knott's Bakery. All rights reserved.
-    </footer>
+  </main>
+
+  <footer>
+    &copy; 2025 J. Knott's Bakery. Freshly made by hand in Southend-on-Sea.
+  </footer>
 </body>
 </html>
